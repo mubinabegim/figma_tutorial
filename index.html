@@ -1,20 +1,925 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma | example tutorial</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma | example tutorial</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
 </head>
+
 <body>
-    <i class="fa-solid fa-bars"></i>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+  <div style="box-shadow: 0px 1px 10px rgba(246, 80, 80, 0.15);">
+    <div class="container d-flex align-items-center justify-content-between fredoka" style="height: 42px; font-size: 12px; background: #FFFFFF;
+   " id="firstSection">
+      <div class="d-flex align-items-center p-2">
+        <p class="m-0">
+          <i class="fa-solid fa-sun"></i>
+          15<sup>°C</sup>
+        </p>
+        <span class="px-2">New York</span>
+      </div>
+      <div class="d-flex align-items-center ">
+        <i class="fa-solid fa-clock mx-2"></i>
+        <span>Wednesday, 10 January 2021 </span>
+      </div>
+      <div class="d-flex align-items-center">
+        <button class="buttonRed">Breaking News</button>
+        <p style="padding-top:16px; padding-left:17px">Indonesia says located black box recorders from crashed plane</p>
+      </div>
+      <div class="d-flex">
+        <div class="icons bg-primary d-flex justify-content-center align-items-center">
+          <i class="fa-brands fa-facebook-f text-white" style="font-size:14px"></i>
+        </div>
+        <div class="icons bg-info d-flex justify-content-center align-items-center">
+          <i class="fa-brands fa-twitter text-white" style="font-size:14px"></i>
+        </div>
+        <div class="icons d-flex justify-content-center align-items-center" style="background-color: rgb(221, 8, 168);">
+          <i class="fa-solid fa-camera text-white " style="font-size:14px"></i>
+        </div>
+
+        <div class="icons d-flex justify-content-center align-items-center" style="background-color: #FE4A51;">
+          <i class="fa-brands fa-youtube text-white " style="font-size:14px"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row pb-3">
+      <div class="col-3">
+        <div class="d-flex justify-content-center align-items-center pt-4">
+          <div>
+            <img src="./assets/logo1.png" alt="logoImg" class="w-100">
+          </div>
+        </div>
+      </div>
+      <div class="col-9 col-md-8  offset-md-1">
+        <div class="purchaseNow p-3 mt-4 mb-1 d-flex justify-content-between align-items-center">
+          <div>
+            <p class="color-codes text-white m-0" style="font-family: 'Roboto', sans-serif;">
+              Best Selling BLOG and MAGAZINE <br>
+              <span class="fredoka">Theme of All Time</span>
+            </p>
+            <p class="color-code color-codes m-0"><i>Experience the change!</i></p>
+          </div>
+          <button class="purchaseBtn">Purchase now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----- NAVBAR ----- -->
+  <nav class="navbar navbar-expand-lg navbar-light py-2">
+    <div class="container px-0">
+      <a class="navbar-brand firstItem1" href="#">
+        <div>
+          Home
+          <div class="hr"></div>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">International</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Opinion</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Businesss</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Youth</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Lifestyle</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex justify-content-around align-items-center">
+          <input class="form-control " type="search" placeholder="Search for" aria-label="Search">
+          <i class="btn fa-solid fa-magnifying-glass" type="submit"></i>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- First section -->
+  <div class="container">
+    <div class="row py-3">
+      <div class="col-lg-6 p-2 ">
+        <div class="for-big-img for-big-img-1">
+          <button class="all-btns health-btn position-absolute business-btn border-0 ">Business</button>
+          <div class="position-absolute for-big-text">
+            <span class="text-white" style="font-size: 14px;">Craig Bator - 27 Dec 2020</span>
+            <p class="oswald text-white fs-2" style="font-weight: 500;">
+              After All Is Said And Done, More Is <br> Done
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-6 p-2 pt-0">
+        <div class="row">
+          <div class="col-lg-6 p-2">
+            <div class="for-big-img for-big-img-2">
+              <button class="position-absolute business-btn business-btn2 text-white">Business</button>
+              <div class="position-absolute for-big-text">
+                <span class="text-white" style="font-size: 14px;">Craig Bator - 27 Dec 2020</span>
+                <p class="oswald text-white fs-5 text-capitalize" style="font-weight:500;">
+                  They're back! kennedy darling named to return to
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 p-2">
+            <div class="for-big-img-3 for-big-img">
+              <button class="position-absolute border-0 business-btn all-btns health-btn text-white">Business</button>
+              <div class="position-absolute for-big-text">
+                <span class="text-white" style="font-size: 14px;">Craig Bator - 27 Dec 2020</span>
+                <p class="oswald text-white fs-5 text-capitalize" style="font-weight:500;">
+                  Swiss Authorities say drivers should
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 p-2">
+            <div class="for-big-img-4 for-big-img">
+              <button class="position-absolute business-btn all-btns  btn-info text-white"
+                style="border-color: rgba(7, 235, 235, 0.89) ; background:rgba(7, 235, 235, 0.89) ;">Business</button>
+              <div class="position-absolute for-big-text">
+                <span class="text-white" style="font-size: 14px;">Craig Bator - 27 Dec 2020</span>
+                <p class="oswald text-white fs-5 text-capitalize" style="font-weight:500;">
+                  Tourism in dubai is booming by international tourist
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---Second section DON'T MISS -->
+  <div class="container">
+    <div class="row py-4">
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center my-3">
+              <h4 class="sec-name">Don't Miss</h4>
+              <div class="text-end oswald">
+                <button class="py-1 px-2 my-1 border-0 text-white btn-red">All</button>
+                <button class="py-1 px-2 my-1 border-0 text-white btn-indigo">Lifestyle</button>
+                <button class="py-1 px-2 my-1 border-0 text-white btn-green">Vogue</button>
+                <button class="py-1 px-2 my-1 border-0 text-white health-btn ">Health & Fitness</button>
+                <button class="py-1 px-2 my-1 border-0 text-white travel">Travel</button>
+                <button class="py-1 px-2 my-1 border-0 text-white aqual-color ">Gadgets</button>
+                <button class="py-1 px-2 my-1 border-0 text-white  health-btn ">World</button>
+                <button class="py-1 px-2 my-1 border-0 text-white blue">More <i
+                    class="fa-solid fa-arrow-down"></i></button>
+              </div>
+            </div>
+            <div class="linear">
+              <div class="linear-red"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-3">
+          <div class="col-lg-6">
+            <div class="linear-image-miss for-big-img my-3">
+              <button class="all-btns business-btn position-absolute  text-white border-0 btn-indigo">Business</button>
+            </div>
+            <div>
+              <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+              <h4 class="oswald my-2">Now Is the Time to Think About Your Small Business Success</h4>
+              <p class="fredoka text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vitae enim voluptates nisi mollitia
+                quisquam optio, sequi dolores vel tenetur. Dolores, id!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="my-3">
+             
+              <div class="d-flex my-2">
+                <div>
+                  <img src="./assets/business3.jpg" style="width: 8.5rem !important;" class="border" alt="img">
+                </div>
+                <div class="for-some-text ms-4">
+                  <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                  <h5 class="oswald text-capitalize" style="font-size:1.1rem">Penn's Expanding Political Climate Gears Up Fo 2020 Election</h5>
+                </div>
+              </div>
+              <div class="d-flex my-2">
+                <div>
+                  <img src="./assets/laptop.jpg" style="width: 8.5rem;" class="border" alt="img">
+                </div>
+                <div class="for-some-text ms-4">
+                  <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                  <h5 class="oswald text-capitalize" style="font-size:1.1rem"> things to look for in a financial trading platform</h5>
+                </div>
+              </div>
+              
+              <div class="d-flex my-2">
+                <div>
+                  <img src="./assets/result.jpg" style="width: 8.5rem;" class="border" alt="img">
+                </div>
+                <div class="for-some-text ms-4">
+                  <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                  <h5 class="oswald text-capitalize" style="font-size:1.1rem"> the only thing that overcomes hard luck
+                    is hard work</h5>
+                </div>
+              </div>
+              <div class="d-flex my-2">
+                <div>
+                  <img src="./assets/papers.jpg" style="width: 8.5rem;" class="border" alt="img">
+                </div>
+                <div class="for-some-text ms-4">
+                  <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                  <h5 class="oswald text-capitalize" style="font-size:1.1rem"> Success is not a good teacher failure
+                    makes you humble</h5>
+                </div>
+              </div>
+              <div class="d-flex my-2">
+                <div>
+                  <img src="./assets/productive.jpg" style="width: 8.5rem;" class="border" alt="img">
+                </div>
+                <div class="for-some-text ms-4">
+                  <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                  <h5 class="oswald text-capitalize" style="font-size:1.1rem"> at value-focused hotels, the free
+                    breakfast gets bigger</h5>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 p-2">
+        <ul class="nav nav-tabs border-0 nav-justified p-0 m-0 oswald">
+          <li class="nav-item ">
+            <a id='firstTab' class="nav-link  fw-bold text-dark active tabs-href" aria-current="page"
+              href="#recent">Recent</a>
+          </li>
+          <li class="nav-item">
+            <a id='secondTab' class="nav-link fw-bold text-dark tabs-href " href="#trending">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a id='thirdTab' class="nav-link fw-bold text-dark tabs-href " href="#mostViews">Most Views</a>
+          </li>
+        </ul>
+        <div class="linear">
+          <div class="linear-red"></div>
+        </div>
+        <div class="tab-content">
+          <div class="my-lg-4 py-1 tab-pane active" id="recent">
+            <div class="d-flex align-items-center">
+              <div class="my-1">
+                <img src="./assets/meal1.jpg" class="other-class" alt="img">
+              </div>
+              <div class="for-some-text ms-4">
+                <span class=" text-secondary" style="font-size: .8rem;"><b class="fredoka">Craig Bator</b> &minus; 27
+                  Dec 2020</span>
+                <h5 class="oswald text-capitalize" style="font-size:1.1rem">Gluten-Free almond cake with berries</h5>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="my-1">
+                <img src="./assets/meal4.jpg" class="other-class" alt="img">
+              </div>
+              <div class="for-some-text ms-4">
+                <span class=" text-secondary" style="font-size: .8rem;"><b class="fredoka">Craig Bator</b> &minus; 27
+                  Dec 2020</span>
+                <h5 class="oswald text-capitalize" style="font-size:1.1rem">Enjoy my favourite molten chocolate cake
+                </h5>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="my-1">
+                <img src="./assets/meal3.jpg" class="other-class" alt="img">
+              </div>
+              <div class="for-some-text ms-4">
+                <span class="text-secondary" style="font-size: .8rem;"><b class="fredoka">Craig Bator</b> &minus; 27 Dec
+                  2020</span>
+                <h5 class="oswald text-capitalize" style="font-size:1.1rem">the back return to you kennedy darlings</h5>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="my-1">
+                <img src="./assets/car.jpg" class="other-class" alt="img">
+              </div>
+              <div class="for-some-text ms-4">
+                <span class="text-secondary" style="font-size: .8rem;"><b class="fredoka">Craig Bator</b> &minus; 27 Dec
+                  2020</span>
+                <h5 class="oswald text-capitalize" style="font-size:1.1rem">the art of racing with speed meter <span
+                    class="text-uppercase">cp</span></h5>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="my-1">
+                <img src="./assets/stadium.jpg" class="other-class" alt="img">
+              </div>
+              <div class="for-some-text ms-4">
+                <span class="text-secondary" style="font-size: .8rem;"><b class="fredoka">Craig Bator</b> &minus; 27 Dec
+                  2020</span>
+                <h5 class="oswald text-capitalize" style="font-size:1.1rem">hone team takes the with <span
+                    class="text-uppercase">&minus;nba</span> 2020</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----Second section end!!! -->
+
+  <!-- ------Entertainment------- -->
+  <div class="container">
+    <div class="row py-4">
+      <div class="col-12">
+        <div class="d-flex justify-content-between">
+          <h4 class="sec-name">Entertainment</h4>
+          <div class="d-flex">
+            <button class="arrow-btn text-white me-2 px-2 py-1">
+              <i class=" bi bi-chevron-left"></i>
+            </button>
+            <button class="arrow-btn text-white px-2 py-1">
+              <i class=" bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="linear my-2">
+          <div class="linear-red"></div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="my-3 hollywood position-relative">
+          <button class="blue text-white  border-0 all-btns position-absolute" style="top:2rem; left:2rem;">Hollywood</button>
+          <div style="bottom: 4rem; left:2rem;" class="text-hollywood text-white position-absolute">
+            <h4 class="oswald">
+              Amanda Seyfried became 'really obsessed' with ghost stories
+            </h4>
+            <div class="linear-red mt-lg-5 mb-2"></div>
+            <p class="fredoka">
+              Hollywood actress Amanda Seyfried has recalled the time when she became obsessed with ghost stories
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 p-2">
+        <div class="row">
+          <div class="col-4">
+            <div class="for-l-bg w-100">
+              <button class="all-btns health-btn my-2 ms-2 p-0"><small>Hollywood</small></button>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="for-some-text">
+              <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+              <h6 class="oswald " style="font-size:1.01rem; line-height: 1.5rem;">Amanda Seyfried became 'really
+                obsessed' with ghost stories</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-4 p-2">
+        <div class="row">
+          <div class="col-4">
+            <div class="for-l-bg for-l-bg-1">
+              <button class="all-btns my-2 ms-2 p-0 text-white" style="background: rgba(7, 235, 235, 0.89);"><small
+                  style="font-size: .9rem;">Hollywood</small></button>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="for-some-text">
+              <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+              <h6 class="oswald" style="font-size:1.01rem; line-height: 1.5rem;">Irrfan Khan's Last film " The Song of
+                Scorpions" to release in 2021</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-4 p-2">
+        <div class="row">
+          <div class="col-4">
+            <div class="for-l-bg for-l-bg-2">
+              <button class="all-btns text-white mt-2 ms-2 p-0  btn-green"><small
+                  style="font-size: .9rem;">Entertainment</small></button>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="for-some-text">
+              <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+              <h6 class="oswald" style="font-size:1.01rem; line-height: 1.5rem;">Apee Karim blessed with a daughter</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ----Sports ---- -->
+  <div class="container">
+    <div class="row pt-3 pb-2">
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center my-3">
+              <h4 class="sec-name">Sports</h4>
+              <div class="text-end">
+                <button class="py-1 px-2 my-1 border-0 text-white btn-red">All</button>
+                <button class="py-1 px-2 my-1 border-0 text-white btn-indigo">Football</button>
+                <button class="py-1 px-2 my-1 border-0 text-white btn-green">Cricket</button>
+                <button class="py-1 px-2 my-1 border-0 text-white health-btn ">Basketball</button>
+                <button class="py-1 px-2 my-1 border-0 text-white travel">Badminston</button>
+                <button class="py-1 px-2 my-1 border-0 text-white aqual-color ">Boxing</button>
+                <button class="py-1 px-2 my-1 border-0 text-white  health-btn ">Esports</button>
+                <button class="arrow-btn text-white ms-2 px-2 py-1" style="background-color: #F4A2A3;">
+                  <i class=" bi bi-chevron-left"></i>
+                </button>
+                <button class="arrow-btn text-white px-2 py-1">
+                  <i class=" bi bi-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="linear">
+              <div class="linear-red"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-3">
+          <div class="col-lg-6">
+            <div class="linear-image-sports linear-image-miss for-big-img my-3">
+              <button class="all-btns business-btn position-absolute  text-white border-0 btn-green">Cricket</button>
+            </div>
+            <div>
+              <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+              <h4 class="oswald my-2">Solskjaer dismisses Klopp comments on Man Utd penalty record</h4>
+              <p class="fredoka text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vitae enim voluptates nisi mollitia
+                quisquam optio, sequi dolores vel tenetur. Dolores, id!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="my-3">
+              <div class="d-flex my-2">
+                <div class="for-small-img">
+                  <img src="./assets/std3.jpg" class="w-100 border" alt="img">
+                </div>
+                <div class="for-some-text ms-4">
+                  <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                  <h5 class="oswald" style="font-size:1.1rem">The only thing that overcomes hard luck is hard work</h5>
+                </div>
+              </div>
+              <div class="d-flex my-2">
+                <div class="for-small-img">
+                  <img src="./assets/ball1.jpg" class="w-100 border" alt="img">
+                </div>
+                <div class="for-some-text ms-4">
+                  <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                  <h5 class="oswald" style="font-size:1.1rem">The only thing that overcomes hard luck is hard work</h5>
+                </div>
+              </div>
+              <div class="d-flex my-2">
+                <div class="for-small-img">
+                  <img src="./assets/football1.jpg" class="w-100 border" alt="img">
+                </div>
+                <div class="for-some-text ms-4">
+                  <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                  <h5 class="oswald" style="font-size:1.1rem">Success is not a good teacher failure makes you humble
+                  </h5>
+                </div>
+              </div>
+              <div class="d-flex my-2">
+                <div class="for-small-img">
+                  <img src="./assets/football2.jpg" class="w-100 border" alt="img">
+                </div>
+                <div class="for-some-text ms-4">
+                  <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                  <h5 class="oswald" style="font-size:1.1rem">Rahane-led India bury ghosts of Adelaide at Melbourne</h5>
+                </div>
+              </div>
+              <div class="d-flex my-2">
+                <div class="for-small-img">
+                  <img src="./assets/stadium.jpg" class="w-100 border" alt="img">
+                </div>
+                <div class="for-some-text ms-4">
+                  <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                  <h5 class="oswald" style="font-size:1.1rem">Southee-lead New Zeeland have Pakistan on the ropes</h5>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="my-4">
+          <h5 class="sec-name" style="margin:1.5rem 0;">Stay Connected</h5>
+          <div class="linear">
+            <div class="linear-red"></div>
+          </div>
+        </div>
+        <div class="btns-group my-3">
+          <div class="facebook-btn d-flex align-items-center">
+            <i class="fa-brands fa-facebook-f ms-3 text-white fs-5"></i>
+            <p class="text-white  ms-2" style="font-size: .8rem;  line-height: 1rem; margin:auto 0;">
+              15000 <br> Followers
+            </p>
+          </div>
+          <div class=" facebook-btn d-flex align-items-center" style="background-color: rgb(221, 8, 168)">
+            <i class="fa-brands fa-instagram-square ms-3 text-white fs-5"></i>
+            <p class="text-white  ms-2" style="font-size: .8rem; line-height: 1rem; margin:auto 0;">
+              15000 <br> Followers
+            </p>
+          </div>
+          <div class=" facebook-btn d-flex align-items-center" style="background-color: #F05044;">
+            <i class="fa-brands fa-youtube ms-3 text-white fs-5"></i>
+            <p class="text-white  ms-2" style="font-size: .8rem; line-height: 1rem; margin:auto 0;">
+              15000 <br> Followers
+            </p>
+          </div>
+          <div class="facebook-btn aqual-color d-flex align-items-center">
+            <i class="fa-brands fa-twitter ms-3 text-white fs-5"></i>
+            <p class="text-white  ms-2" style="font-size: .8rem; line-height: 1rem; margin:auto 0;">
+              15000 <br> Followers
+            </p>
+          </div>
+          <div class="facebook-btn d-flex align-items-center">
+            <i class="fa-brands fa-behance ms-3 text-white fs-5"></i>
+            <p class="text-white  ms-2" style="font-size: .8rem; line-height: 1rem; margin:auto 0;">
+              15000 <br> Followers
+            </p>
+          </div>
+          <div class="facebook-btn d-flex align-items-center" style="background-color: #F7669D;">
+            <i class="fa-solid fa-basketball ms-3 text-white fs-5"></i>
+            <p class="text-white ms-2" style="font-size: .8rem; line-height: 1rem; margin:auto 0;">
+              15000 <br> Followers
+            </p>
+          </div>
+        </div>
+        <div class="for-food">
+          <h4 class="text-white" style="font-family: 'Times New Roman', Times, serif">Ad</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----Life Style ---- -->
+  <div class="container">
+    <div class="row py-2">
+
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center my-3">
+              <h4 class="sec-name">Life Style</h4>
+              <div class="text-end">
+                <button class="py-1 px-2 my-1 border-0 text-white btn-red">All</button>
+                <button class="py-1 px-2 my-1 border-0 text-white btn-indigo">Travel</button>
+                <button class="py-1 px-2 my-1 border-0 text-white btn-green">Recipes</button>
+                <button class="py-1 px-2 my-1 border-0 text-white health-btn ">Health & Fitness</button>
+                <button class="py-1 px-2 my-1 border-0 text-white travel">Music</button>
+                <button class="arrow-btn text-white ms-2 px-2 py-1" style="background-color: #F4A2A3;">
+                  <i class=" bi bi-chevron-left"></i>
+                </button>
+                <button class="arrow-btn text-white px-2 py-1">
+                  <i class=" bi bi-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="linear">
+              <div class="linear-red"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="linear-image-life-style  for-big-img my-3">
+              <button class="all-btns business-btn position-absolute  text-white border-0 travel">Health & Fitness</button>
+            </div>
+            <div>
+              <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+              <h4 class="oswald my-2 text-capitalize">'Institutional delivery vital for reducing maternal and neonatal
+                deaths'</h4>
+              <p class="fredoka text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vitae enim voluptates nisi mollitia
+                quisquam optio, sequi dolores vel tenetur. Dolores, id!
+              </p>
+            </div>
+
+            <div class="d-flex  align-items-center">
+              <div class="mx-3 my-2">
+                <img src="./assets/sofa.jpg" style="width: 9rem;" alt="img">
+              </div>
+              <div>
+                <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                <h5 class="oswald">Creative decorationg with houseplants</h5>
+              </div>
+            </div>
+            <div class="d-flex  align-items-center">
+              <div class="mx-3 my-2">
+                <img src="./assets/whitePic2.jpg" style="width: 9rem;" alt="img">
+              </div>
+              <div>
+                <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                <h5 class="oswald">Best things you can do on a solo mountain climb</h5>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-6">
+            <div class="linear-image-life-style2 for-big-img my-3">
+              <button class="all-btns business-btn position-absolute  text-white border-0 btn-green">Health &
+                Fitness</button>
+            </div>
+            <div>
+              <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+              <h4 class="oswald my-2 text-capitalize">Being self-Controlled chikd may lead to health middle-Age</h4>
+              <p class="roboto text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vitae enim voluptates nisi mollitia
+                quisquam optio, sequi dolores vel tenetur. Dolores, id!
+              </p>
+            </div>
+
+            <div class="d-flex  align-items-center">
+              <div class="mx-3 my-2">
+                <img src="./assets/kitchen.jpg" style="width: 9rem;" alt="img">
+              </div>
+              <div>
+                <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                <h5 class="oswald">How to use basic design principles your home</h5>
+              </div>
+            </div>
+            <div class="d-flex  align-items-center">
+              <div class="mx-3 my-2">
+                <img src="./assets/whitePic.jpg" style="width: 9rem;" alt="img">
+              </div>
+              <div>
+                <span class="small text-secondary"><b class="fredoka">Craig Bator</b> &minus; 27 Dec 2020</span>
+                <h5 class="oswald">How to burn calories with pleasant activites</h5>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="get-latest">
+
+          <div class="fredoka text-center pb-2">
+            <h6 class="text-center oswald pt-4 pb-3">Get Lates Updates</h6>
+            <button class="btn-white my-1">Your email address</button>
+            <button class="subscribe my-1">Subscribe</button>
+          </div>
+
+        </div>
+        <div class="mt-lg-5 mt-3 mb-3">
+          <h5 class="sec-name mb-3">Categories</h5>
+          <div class="linear">
+            <div class="linear-red"></div>
+          </div>
+        </div>
+
+        <ul class="list-unstyled">
+          <li class="m-3 d-flex justify-content-between">
+            <div>
+              <i class="fa-solid fa-chevron-right me-2"></i>
+              <span class="fredoka"> Life Style</span>
+            </div>
+            <div
+              class="squareNum btn-red text-white d-flex justify-content-center align-items-center px-2 py-1 fredoka">50
+            </div>
+          </li>
+          <li class="m-3 d-flex justify-content-between">
+            <div class="fredoka">
+              <i class="fa-solid fa-chevron-right me-2"></i>
+              <span class="fredoka"> World</span>
+            </div>
+            <div
+              class="squareNum  btn-indigo text-white d-flex justify-content-center align-items-center px-2 py-1 fredoka">
+              55
+            </div>
+
+          </li>
+          <li class="m-3 d-flex justify-content-between">
+            <div class="fredoka">
+              <i class="fa-solid fa-chevron-right me-2"></i>
+              <span class="fredoka"> Foods</span>
+            </div>
+            <div style="background-color:#C13985;"
+              class="squareNum btn-red text-white d-flex justify-content-center align-items-center px-2 py-1 fredoka">40
+            </div>
+
+          </li>
+          <li class="m-3 d-flex justify-content-between">
+            <div class="fredoka">
+              <i class="fa-solid fa-chevron-right me-2"></i>
+              <span class="fredoka"> Technology</span>
+            </div>
+            <div
+              class="squareNum btn-red text-white d-flex justify-content-center align-items-center px-2 py-1 blue fredoka">
+              10
+            </div>
+
+          </li>
+          <li class="m-3 d-flex justify-content-between">
+            <div class="fredoka">
+              <i class="fa-solid fa-chevron-right me-2"></i>
+              <span class="fredoka"> Sports</span>
+            </div>
+            <div style="background-color: #0F88F0;"
+              class="squareNum  text-white d-flex justify-content-center align-items-center px-2 py-1 fredoka">42</div>
+
+          </li>
+          <li class="m-3 d-flex justify-content-between">
+            <div class="fredoka">
+              <i class="fa-solid fa-chevron-right me-2"></i>
+              <span class="fredoka"> Football</span>
+            </div>
+            <div style="background-color:#F0659A;"
+              class="squareNum  text-white d-flex justify-content-center align-items-center ps-3 pe-2 py-1 fredoka">5
+            </div>
+
+          </li>
+          <li class="m-3 d-flex justify-content-between">
+            <div class="fredoka">
+              <i class="fa-solid fa-chevron-right me-2"></i>
+              <span class="fredoka"> Cricket</span>
+            </div>
+            <div
+              class="squareNum aqual-color text-white d-flex justify-content-center align-items-center px-2 py-1 fredoka">
+              67
+            </div>
+
+          </li>
+          <li class="m-3 d-flex justify-content-between">
+            <div class="fredoka">
+              <i class="fa-solid fa-chevron-right me-2"></i>
+              <span class="fredoka"> Covid 19</span>
+            </div>
+            <div
+              class="squareNum aqual-color text-white d-flex justify-content-center align-items-center px-2 py-1 fredoka">
+              12
+            </div>
+
+          </li>
+        </ul>
+      </div>
+      <div class="col-9 col-md-8  offset-md-1">
+        <div class="purchaseNow p-3 mt-4 mb-1 d-flex justify-content-between align-items-center">
+          <div>
+            <p class="color-codes text-white m-0">
+              Best Selling <b class="oswald">BLOG</b> and <b class="oswald">MAGAZINE</b> <br>
+              <span class="fredoka"> Theme of All Time</span>
+            </p>
+            <p class="color-code color-codes m-0"><i>Experience the change!</i></p>
+          </div>
+          <button class="purchaseBtn">Purchase now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- last section -->
+  <div class="container">
+    <div class="row">
+      <div class="footer-images">
+        <div class=" for-footer-img image1">
+        </div>
+
+        <div class=" for-footer-img image2">
+        </div>
+
+        <div class=" for-footer-img image3">
+          <div class="follow-us text-white">
+
+            <div class="text-center">
+              <i class="fa-brands fa-instagram fs-5"></i> <br>
+              <span>Follow us</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class=" for-footer-img image4">
+        </div>
+
+        <div class=" for-footer-img image5">
+        </div>
+
+      </div>
+    </div>
+    <div class="row py-4" style="background-color:#393939; margin:0 1px;">
+      <div class="col-lg-3">
+        <div>
+          <img src="./assets/logo2.PNG" alt="logoImg" class="w-50 h-50">
+        </div>
+        <p class="fredoka text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. doloribus deserunt
+          explicabo officiis.</p>
+        <div class="d-flex">
+          <div class="icons-footer bg-primary d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-facebook-f text-white" style="font-size:14px"></i>
+          </div>
+          <div class="icons-footer bg-info d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-twitter text-white" style="font-size:14px"></i>
+          </div>
+          <div class="icons-footer d-flex justify-content-center align-items-center"
+            style="background-color: rgb(221, 8, 168);">
+            <i class="fa-solid fa-camera text-white " style="font-size:14px"></i>
+          </div>
+
+          <div class="icons-footer d-flex justify-content-center align-items-center" style="background-color: #FE4A51;">
+            <i class="fa-brands fa-youtube text-white " style="font-size:14px"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <h4 class="oswald text-white">Photo Gallery</h4>
+
+        <div class="linear  my-3" style="background-color: white !important;">
+          <div class="linear-red"></div>
+        </div>
+        <div class="imgs-group">
+          <img style="width: 5.2rem;" src="./assets/android.jpg" alt="img">
+          <img style="width: 5.2rem;" src="./assets/kitchen.jpg" alt="img">
+          <img style="width: 5.2rem;" src="./assets/kitchen.jpg" alt="img">
+          <img style="width: 5.2rem;" src="./assets/kitchen.jpg" alt="img">
+          <img style="width: 5.2rem;" src="./assets/kitchen.jpg" alt="img">
+          <img style="width: 5.2rem;" src="./assets/android.jpg" alt="img">
+
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <h4 class="oswald text-white">Tags</h4>
+        <div class="linear  my-3" style="background-color: white !important;">
+          <div class="linear-red"></div>
+        </div>
+        <button class="fredoka py-1 px-2 my-1 border-0 text-white btn-red">Football</button>
+        <button class="fredoka py-1 px-2 my-1 border-0 text-white blue">Cricket</button>
+        <button class="fredoka py-1 px-2 my-1 border-0 text-white btn-indigo">Covid 19</button>
+        <button class="fredoka py-1 px-2 my-1 border-0 text-white travel ">Life Style</button>
+        <button class="fredoka py-1 px-2 my-1 border-0 text-white " style="background-color: #FDB8B4;">Tranding
+          News</button>
+        <button class="fredoka py-1 px-2 my-1 border-0 text-white aqual-color ">Technology</button>
+        <button class="fredoka py-1 px-2 my-1 border-0 text-white  health-btn ">Travel</button>
+      </div>
+      <div class="col-lg-3">
+        <h4 class="oswald text-white">Stay In Touch</h4>
+        <div class="linear  my-3" style="background-color: white !important;">
+          <div class="linear-red"></div>
+        </div>
+        <p class="text-white fredoka">To be updated with all lates news,offers and special annoucements</p>
+        <button class="btn-white fredoka">Your email address</button>
+        <button class=" subscribe my-2 btn-red fredoka">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
